@@ -9,9 +9,36 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="medium">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
 
- 
-</ion-content>
+      
+      <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+      <ion-item-sliding>
+        <ion-list lines="full"> 
+          <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="..\assets\mortalkombat.jpg">
+              </ion-thumbnail> 
+                  <ion-label class="ion-text-wrap">
+                      <div>
+                        <h1>Mortal Kombat (2021)</h1>
+                        <p>15/04/2021 (BR) - 1h 50m</p>
+                        <p>Ação, Fantasia, Aventura<p>
+                      </div>
+                  </ion-label> 
+    
+              <ion-chip color="success" outline>
+                <ion-label>76%</ion-label>
+              </ion-chip>
+         </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+          
+          </ion-list>
+          </ion-item-sliding>
+        </ion-content>
