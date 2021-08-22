@@ -1,157 +1,166 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Filmes
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="medium">Tab 1</ion-title>
+      <ion-title size="medium">Filmes</ion-title>
     </ion-toolbar>
-  </ion-header>
+    </ion-header>
+    <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
 
-<!-- Filme 1  -->
-<ion-searchbar placeholder="Pesquisar"></ion-searchbar>
-  <ion-item-sliding>
-    <ion-list lines="fullscreen"> 
-      <ion-item>
-        <ion-thumbnail slot="start">
-            <img src="..\assets\mortalkombat.jpg">
-        </ion-thumbnail> 
-          <ion-label class="ion-text-wrap">
-              <div>
-                <h1>Mortal Kombat</h1>
-                  <p>15/04/2021 (BR) - 1h 50m</p>
-                  <p>Ação, Fantasia, Aventura<p>
-                  <p>Diretor: Simon McQuoid </p>
-              </div>
-          </ion-label> 
-    
-          <ion-chip color="success" outline>
-            <ion-label>6.1/10 - IMDb</ion-label>
-          </ion-chip>
-     
-          <ion-item-options side="end">
-            <ion-item-option>
-               <ion-icon slot="icon-only" name="star"></ion-icon>
-            </ion-item-option>
-          </ion-item-options>
-          
-      </ion-item>
-      </ion-list>
-<!-- Filme 2  -->
-      <ion-list lines="fullscreen"> 
-        <ion-item>
-          <ion-thumbnail slot="start">
-              <img src="..\assets\Queen_&_Slim.jpg">
-          </ion-thumbnail> 
-            <ion-label class="ion-text-wrap">
-                <div>
-                  <h1>Queen & Slim</h1>
-                    <p>27/11/2019 (BR) - 2h 12m </p>
-                    <p>Crime, Drama, Romance<p>
-                    <p>Diretora: Melina Matsoukas </p>
-                </div>
-            </ion-label> 
-      
-            <ion-chip color="success" outline>
-              <ion-label>7.1/10 - IMDb</ion-label>
-            </ion-chip>
-       
-            <ion-item-options side="end">
-              <ion-item-option>
-                 <ion-icon slot="icon-only" name="star"></ion-icon>
-              </ion-item-option>
-            </ion-item-options>
-            
-        </ion-item>
-        </ion-list>
-<!-- Filme 3  -->
-        <ion-list lines="fullscreen"> 
+
+<ion-content [fullscrean]="true">
+    <!-- Filme 1  -->
+      <ion-item-sliding>
+        <ion-list lines="full"> 
           <ion-item>
             <ion-thumbnail slot="start">
-                <img src="..\assets\TheGrandHotelBudapest.jpg">
+                <img src="..\assets\mortalkombat.jpg">
             </ion-thumbnail> 
               <ion-label class="ion-text-wrap">
                   <div>
-                    <h1>The Grand Budapest Hotel</h1>
-                      <p>03/07/2014 (BR) - 1h 39m</p>
-                      <p>Aventura, Comédia, Crime</p>
-                      <p>Diretor: Wes Anderson </p>
+                    <h1>Mortal Kombat</h1>
+                      <p>15/04/2021 (BR) - 1h 50m</p>
+                      <p>Ação, Fantasia, Aventura<p>
+                      <p>Diretor: Simon McQuoid </p>
                   </div>
               </ion-label> 
         
-              <ion-chip color="success" outline>
-                <ion-label>8.1/10 - IMDb</ion-label>
-              </ion-chip>
-         
-              <ion-item-options side="end">
-                <ion-item-option>
-                   <ion-icon slot="icon-only" name="star"></ion-icon>
-                </ion-item-option>
-              </ion-item-options>
-              
-          </ion-item>
-          </ion-list>
-<!-- Filme 4  -->
-          <ion-list lines="fullscreen"> 
-            <ion-item>
-              <ion-thumbnail slot="start">
-                  <img src="..\assets\matrix.jpg">
-              </ion-thumbnail> 
-                <ion-label class="ion-text-wrap">
-                    <div>
-                      <h1>Matrix</h1>
-                        <p>21/05/1999 (BR) - 3h 16m</p>
-                        <p>Ação, Sci-Fi<p>
-                        <p>Diretoras: Lana Wachowski, Lilly Wachowski</p> 
-                    </div>
-                </ion-label> 
-          
                 <ion-chip color="success" outline>
-                  <ion-label>8.7/10 - IMDb</ion-label>
+                    <ion-label>6.1/10 - IMDb</ion-label>
                 </ion-chip>
-           
-                <ion-item-options side="end">
-                  <ion-item-option>
-                     <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-item>
+
+                <ion-item-options (click)='exibirAlertaFavorito()' side="end">
+                  <ion-item-option color="tertiary">
+                    <ion-icon slot="icon-only" name="star"></ion-icon>
                   </ion-item-option>
                 </ion-item-options>
-                
-            </ion-item>
-            </ion-list>
+          </ion-list> 
+      </ion-item-sliding>
 
-<!-- Filme 5  -->
-            <ion-list lines="fullscreen"> 
-              <ion-item>
-                <ion-thumbnail slot="start">
-                    <img src="..\assets\High_Society.jpg">
-                </ion-thumbnail> 
-                  <ion-label class="ion-text-wrap">
-                      <div>
-                        <h1>Alta Sociedade</h1>
-                          <p>17/07/1956 (EUA) - 1h 51m</p>
-                          <p>Ação, Fantasia, Aventura<p>
-                          <p>Diretor: Charles Walters</p> 
-                      </div>
-                  </ion-label> 
-            
-                  <ion-chip color="success" outline>
-                    <ion-label>7.0/10 - IMDb</ion-label>
-                  </ion-chip>
-             
-                  <ion-item-options side="end">
-                    <ion-item-option>
-                       <ion-icon slot="icon-only" name="star"></ion-icon>
-                    </ion-item-option>
-                  </ion-item-options>
-                  
-              </ion-item>
-              </ion-list>
-        
-        </ion-item-sliding>
-        
+<!-- Filme 2   -->
+<ion-item-sliding>
+  <ion-list lines="full"> 
+    <ion-item>
+      <ion-thumbnail slot="start">
+          <img src="..\assets\Queen_&_Slim.jpg">
+      </ion-thumbnail> 
+        <ion-label class="ion-text-wrap">
+            <div>
+              <h1>Queen & Slim</h1>
+                    <p>27/11/2019 (BR) - 2h 12m </p>
+                    <p>Crime, Drama, Romance<p>
+                    <p>Diretora: Melina Matsoukas </p>
+            </div>
+        </ion-label> 
+  
+          <ion-chip color="success" outline>
+              <ion-label>7.1/10 - IMDb</ion-label>
+          </ion-chip>
+     </ion-item>
+
+          <ion-item-options (click)= 'exibirAlertaFavorito()' side="end">
+            <ion-item-option >
+              <ion-icon slot="icon-only" name="star"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+  </ion-list> 
+</ion-item-sliding>
+
+<ion-item-sliding>
+  <ion-list lines="full"> 
+    <ion-item>
+      <ion-thumbnail slot="start">
+          <img src="..\assets\TheGrandHotelBudapest.jpg">
+      </ion-thumbnail> 
+        <ion-label class="ion-text-wrap">
+            <div>
+              <h1>The Grand Budapest Hotel</h1>
+                      <p>03/07/2014 (BR) - 1h 39m</p>
+                      <p>Aventura, Comédia, Crime</p>
+                      <p>Diretor: Wes Anderson </p>
+            </div>
+        </ion-label> 
+  
+          <ion-chip color="success" outline>
+              <ion-label>8.1/10 </ion-label>
+          </ion-chip>
+     </ion-item>
+
+          <ion-item-options (click)= 'exibirAlertaFavorito()' side="end">
+            <ion-item-option >
+              <ion-icon slot="icon-only" name="star"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+  </ion-list> 
+</ion-item-sliding>
+
+<ion-item-sliding>
+  <ion-list lines="full"> 
+    <ion-item>
+      <ion-thumbnail slot="start">
+          <img src="..\assets\matrix.jpg">
+      </ion-thumbnail> 
+        <ion-label class="ion-text-wrap">
+            <div>
+              <h1>Matrix</h1>
+              <p>21/05/1999 (BR) - 3h 16m</p>
+              <p>Ação, Sci-Fi<p>
+              <p>Diretoras: Lana Wachowski, Lilly Wachowski</p> 
+            </div>
+        </ion-label> 
+  
+          <ion-chip color="success" outline>
+              <ion-label>8.7/10 </ion-label>
+          </ion-chip>
+     </ion-item>
+
+          <ion-item-options (click)= 'exibirAlertaFavorito()' side="end">
+            <ion-item-option >
+              <ion-icon slot="icon-only" name="star"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+  </ion-list> 
+</ion-item-sliding>
+
+<ion-item-sliding>
+  <ion-list lines="full"> 
+    <ion-item>
+      <ion-thumbnail slot="start">
+          <img src="..\assets\High_Society.jpg">
+      </ion-thumbnail> 
+        <ion-label class="ion-text-wrap">
+          <h1>Alta Sociedade</h1>
+          <p>17/07/1956 (EUA) - 1h 51m</p>
+          <p>Comedia, Musical, Romance<p>
+          <p>Diretor: Charles Walters</p> 
+        </ion-label> 
+  
+          <ion-chip color="success" outline>
+              <ion-label>7.0/10 </ion-label>
+          </ion-chip>
+     </ion-item>
+
+          <ion-item-options (click)= 'exibirAlertaFavorito()' side="end">
+            <ion-item-option >
+              <ion-icon slot="icon-only" name="star"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+  </ion-list> 
+</ion-item-sliding>
+
+
+
+
+
+
+
 </ion-content>
+
+        
