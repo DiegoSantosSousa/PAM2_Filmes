@@ -5,5 +5,6 @@ export interface IFilmes {
     diretor: string;
     cartaz: string;
     generos: string[];
-    nota: string;
+    classificacao: number;
+
     }
