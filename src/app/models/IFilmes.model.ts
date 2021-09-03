@@ -6,5 +6,5 @@ export interface IFilmes {
     cartaz: string;
     generos: string[];
     classificacao: number;
-
+    pagina?: string; 
     }

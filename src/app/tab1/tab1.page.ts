@@ -19,8 +19,10 @@ export class Tab1Page {
       duracao:' 1h 50m',
       diretor:'Simon McQuoid',
       cartaz:'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6Wdl9N6dL0Hi0T1qJLWSz6gMLbd.jpg',
-      generos:['Ação, Fantasia, Aventura'],
+      generos:['Ação', 'Fantasia', 'Aventura'],
       classificacao:6.1, 
+      pagina: 'mortal-kombat'
+
 
     },
     {
@@ -29,8 +31,10 @@ export class Tab1Page {
       duracao:'2h 12m',
       diretor:'Melina Matsoukas',
       cartaz:'https://upload.wikimedia.org/wikipedia/pt/e/ef/Queen_%26_Slim.jpeg',
-      generos:['Crime, Drama, Romance'],
+      generos:['Crime', 'Drama', 'Romance'],
       classificacao:7.1, 
+      pagina:'queen-slim'
+
     },
     {
       nome: 'The Grand Budapest Hotel',
@@ -38,8 +42,10 @@ export class Tab1Page {
       duracao:'1h 39m',
       diretor:'Wes Anderson',
       cartaz:'https://images-na.ssl-images-amazon.com/images/I/81Z6-ieAIyL.jpg',
-      generos:['Aventura, Comédia, Crim'],
+      generos:['Aventura', 'Comédia', 'Crim'],
       classificacao:8.1, 
+      pagina:'the-grand-budapest-hotel'
+
     },
     {
       nome: 'Matrix',
@@ -47,8 +53,10 @@ export class Tab1Page {
       duracao:'3h 16m',
       diretor:'Lana Wachowski e Lilly Wachowski',
       cartaz:'https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG',
-      generos:['Ação, Sci-Fi'],
+      generos:['Ação', 'Sci-Fi'],
       classificacao:8.7, 
+      pagina:'matrix'
+
     },
     {
       nome: 'Alta Sociedade',
@@ -56,10 +64,11 @@ export class Tab1Page {
       duracao:'1h 51m',
       diretor:'Charles Walters',
       cartaz:'https://upload.wikimedia.org/wikipedia/pt/d/dd/High_Society.jpg',
-      generos:['Comedia, Musical, Romance'],
+      generos:['Comedia', 'Musical', 'Romance'],
       classificacao:7.0, 
-    },
-   
+      pagina:'alta-sociedade'
+
+    }
   ];
 
   constructor(public alertController: AlertController, public toastController: ToastController ) {}
